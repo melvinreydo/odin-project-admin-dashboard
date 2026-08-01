@@ -7,7 +7,7 @@
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 350px 350px;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 .main {
@@ -27,6 +27,7 @@
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.2s, transform 0.2s;
+  white-space: nowrap;
 }
 .grid-item::before {
   content: "";
@@ -52,6 +53,7 @@
   font-size: 15px;
   color: grey;
   text-align: left;
+  white-space: normal;
 }
 .project-card-actions {
   display: flex;
