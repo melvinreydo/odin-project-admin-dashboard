@@ -1,0 +1,51 @@
+#left-dashboard {
+  font-weight: bold;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding: 20px;
+  background-color: #1a91da;
+}
+.dashboard-list {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-list div, 
+#dashboard-heading {
+  column-gap: 10px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: background-color 0.1s;
+}
+.dashboard-list div:hover {
+  background-color: #3BA2E0;
+  cursor: pointer;
+}
+.dashboard-list div:active {
+  background-color: #1a91da;
+  cursor: pointer;
+}
+#dashboard-heading svg {
+  width: 50px;
+  height: 60px;
+}
+#dashboard-heading p {
+  margin: 0;
+  font-size: 30px;
+}
+.dashboard-list p {
+  margin: 0;
+  font-size: 20px;
+}
+.dashboard-list div svg {
+  width: 50px;
+  height: 30px;
+}
